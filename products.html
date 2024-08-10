@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CabInn - Cozy Cabin Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Flexbox for cabin blocks */
+        #cabins {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cabin-block {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .cabin-block img {
+            width: 100%; /* Make the images larger */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .cabin-block p {
+            font-size: 0.9em; /* Smaller text */
+            margin: 0; /* Remove default margin */
+            line-height: 1.4; /* Improve readability */
+        }
+
+        @media (max-width: 800px) {
+            .cabin-block {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .cabin-block {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: url('images/products-background.jpg');">
+    <header id="header">
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Cabins</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Our Cabins</h1>
+    </header>
+
+    <main id="content">
+        <section id="cabins">
+            <div class="cabin-block">
+                <h2>Rustic Cabin</h2>
+                <img src="images/rustic-cabin.jpg" alt="Rustic Cabin">
+                <p>Experience the charm of our Rustic Cabin, where traditional design meets modern comfort. Perfect for those who love the woods, this cabin offers a fireplace, a cozy bedroom, and stunning views.</p>
+            </div>
+
+            <div class="cabin-block">
+                <h2>Lakeside Cabin</h2>
+                <img src="images/lakeside-cabin.jpg" alt="Lakeside Cabin">
+                <p>Our Lakeside Cabin is ideal for nature lovers who want to be close to the water. Enjoy direct access to the lake, a spacious deck, and peaceful surroundings that make for a perfect retreat.</p>
+            </div>
+
+            <div class="cabin-block">
+                <h2>Luxury Cabin</h2>
+                <img src="images/luxury-cabin.jpg" alt="Luxury Cabin">
+                <p>Indulge in luxury with our upscale cabin that features modern amenities, a hot tub, and panoramic views. The perfect escape for a romantic getaway or a relaxing retreat.</p>
+            </div>
+
+            <div class="cabin-block">
+                <h2>Family Cabin</h2>
+                <img src="images/family-cabin.jpg" alt="Family Cabin">
+                <p>Our Family Cabin offers the space and amenities needed for a comfortable stay with the entire family. With multiple bedrooms, a full kitchen, and a large living area, it’s perfect for making memories together.</p>
+            </div>
+
+            <div class="cabin-block">
+                <h2>Mountain Cabin</h2>
+                <img src="images/mountain-cabin.jpg" alt="Mountain Cabin">
+                <p>Our Mountain Cabin is nestled in the hills, offering breathtaking views and a serene environment. Ideal for hikers and nature enthusiasts looking to explore the great outdoors.</p>
+            </div>
+
+            <div class="cabin-block">
+                <h2>Beach Cabin</h2>
+                <img src="images/beach-cabin.jpg" alt="Beach Cabin">
+                <p>Step out onto the sand from our Beach Cabin, located just steps away from the ocean. Perfect for those seeking sun, surf, and relaxation.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <nav id="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Cabins</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>&copy; 2024 CabInn. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
